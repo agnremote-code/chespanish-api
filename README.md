@@ -20,6 +20,7 @@ La documentacion tecnica que habia quedado mezclada en la landing fue movida aca
 - `docs/api-boundary.md`
 - `docs/architecture.md`
 - `docs/project-architecture.md`
+- `docs/testing-notes.md`
 
 ## Responsabilidad
 
@@ -80,6 +81,12 @@ Ejecutar tests:
 
 ```bash
 py -m pytest
+```
+
+Notas de testing y warnings conocidos:
+
+```text
+docs/testing-notes.md
 ```
 
 ## Siguiente hito
