@@ -2,14 +2,24 @@
 
 Repositorio reservado para la API de Chespanish.
 
-## Estado actual
+## Stack
 
-Todavia no se definio el stack. Este repositorio arranca limpio para que la API se disene como una aplicacion separada de la landing y de la app mobile.
+- FastAPI
+- Python
+- Supabase Postgres
+- Pydantic
+- SQLAlchemy o SQLModel
+- Alembic
+- Pytest
+
+Este repositorio arranca limpio para que la API se disene como una aplicacion separada de la landing y de la app mobile.
 
 La documentacion tecnica que habia quedado mezclada en la landing fue movida aca como referencia:
 
 - `docs/firebase-data-model.md`
 - `docs/api-boundary.md`
+- `docs/architecture.md`
+- `docs/project-architecture.md`
 
 ## Responsabilidad
 
@@ -24,4 +34,11 @@ La app mobile y la landing deberian consumir esta API cuando el backend este def
 
 ## Proximo paso
 
-Evaluar opciones de stack para backend, autenticacion, base de datos y despliegue.
+Scaffold inicial de FastAPI:
+
+- estructura base de carpetas
+- endpoint `GET /health`
+- configuracion de entorno
+- CORS local para landing y mobile
+- tests con Pytest
+- preparacion para conectar Supabase Postgres
