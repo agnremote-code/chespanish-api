@@ -22,6 +22,7 @@ La documentacion tecnica que habia quedado mezclada en la landing fue movida aca
 - `docs/project-architecture.md`
 - `docs/testing-notes.md`
 - `docs/auth-data-model.md`
+- `docs/auth-endpoints.md`
 
 ## Responsabilidad
 
@@ -92,10 +93,23 @@ docs/testing-notes.md
 
 ## Siguiente hito
 
-Crear el proyecto en Supabase y aplicar la migracion inicial:
+La migracion inicial de perfiles ya fue aplicada en Supabase:
 
 ```text
 supabase/migrations/20260625211500_create_profiles.sql
 ```
 
-Despues implementar el primer flujo de registro/login con Supabase Auth y perfiles.
+El primer flujo de registro/login se expone desde la API:
+
+```text
+POST /auth/signup
+POST /auth/login
+```
+
+Ambos endpoints usan Supabase Auth. La API recibe email/password y Supabase maneja el almacenamiento seguro de credenciales.
+
+Contrato de endpoints:
+
+```text
+docs/auth-endpoints.md
+```

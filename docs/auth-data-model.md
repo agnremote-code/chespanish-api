@@ -36,10 +36,11 @@ updated_at timestamptz
 
 ## Registration flow
 
-Expected first flow:
+Selected first flow:
 
 ```text
-client -> Supabase Auth sign up with email/password
+client -> FastAPI /auth/signup or /auth/login
+FastAPI -> Supabase Auth with email/password
 Supabase Auth -> creates auth.users row
 database trigger -> creates public.profiles row
 client -> API with Supabase access token

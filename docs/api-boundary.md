@@ -18,6 +18,8 @@ The API should own backend concerns shared by every client:
 These endpoints are a starting point for product discussion, not a final contract.
 
 ```text
+POST /auth/signup
+POST /auth/login
 POST /waitlist/leads
 GET /me
 PATCH /me

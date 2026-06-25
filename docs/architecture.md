@@ -69,6 +69,8 @@ alembic/
 
 ```text
 GET /health
+POST /auth/signup
+POST /auth/login
 POST /waitlist/leads
 GET /me
 PATCH /me
