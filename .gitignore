@@ -9,3 +9,4 @@ htmlcov/
 .env
 .env.local
 *.egg-info/
+supabase/.temp/
