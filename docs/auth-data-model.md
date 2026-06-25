@@ -68,3 +68,20 @@ Initial policies:
 - users can update their own profile
 
 The API can use the Supabase service role key for trusted backend operations, but that key must only live in the FastAPI environment.
+
+## Development email confirmation
+
+For local development, email confirmation is disabled in:
+
+```text
+supabase/config.toml
+```
+
+Relevant setting:
+
+```toml
+[auth.email]
+enable_confirmations = false
+```
+
+This allows the API signup/login flow to be tested without hitting Supabase's default email rate limits. Before production, revisit this setting and decide whether to enable email confirmation or configure a custom SMTP provider.
