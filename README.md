@@ -23,6 +23,7 @@ La documentacion tecnica que habia quedado mezclada en la landing fue movida aca
 - `docs/testing-notes.md`
 - `docs/auth-data-model.md`
 - `docs/auth-endpoints.md`
+- `docs/auth-runbook.md`
 
 ## Responsabilidad
 
@@ -112,4 +113,10 @@ Contrato de endpoints:
 
 ```text
 docs/auth-endpoints.md
+```
+
+Registro completo de setup, pruebas, decisiones y proximos pasos:
+
+```text
+docs/auth-runbook.md
 ```

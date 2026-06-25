@@ -96,3 +96,23 @@ Open question: whether sign in/sign up should be handled directly by clients thr
 4. Build the first registration/login flow with Supabase Auth.
 5. Scaffold the Expo app and connect it to the API health endpoint.
 6. Build the first mobile auth/profile loop.
+
+Current auth status:
+
+```text
+POST /auth/signup -> implemented and tested
+POST /auth/login  -> implemented and tested
+public.profiles   -> created by migration and trigger
+```
+
+Next architecture milestone:
+
+```text
+GET /me
+```
+
+The detailed auth runbook lives in:
+
+```text
+docs/auth-runbook.md
+```

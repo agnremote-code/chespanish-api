@@ -85,3 +85,9 @@ enable_confirmations = false
 ```
 
 This allows the API signup/login flow to be tested without hitting Supabase's default email rate limits. Before production, revisit this setting and decide whether to enable email confirmation or configure a custom SMTP provider.
+
+The full setup and testing history is documented in:
+
+```text
+docs/auth-runbook.md
+```
