@@ -91,8 +91,8 @@ Open question: whether sign in/sign up should be handled directly by clients thr
 ## Development order
 
 1. Scaffold the FastAPI repo with project structure, health endpoint, tests, linting, formatting, and environment config.
-2. Create the Supabase project and define the first Postgres schema.
+2. Create the Supabase project and apply the first `profiles` schema.
 3. Connect the API to Supabase locally.
-4. Replace the landing waitlist fallback with `POST /waitlist/leads`.
+4. Build the first registration/login flow with Supabase Auth.
 5. Scaffold the Expo app and connect it to the API health endpoint.
-6. Build the first mobile auth/progress loop.
+6. Build the first mobile auth/profile loop.

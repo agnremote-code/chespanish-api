@@ -21,6 +21,7 @@ La documentacion tecnica que habia quedado mezclada en la landing fue movida aca
 - `docs/architecture.md`
 - `docs/project-architecture.md`
 - `docs/testing-notes.md`
+- `docs/auth-data-model.md`
 
 ## Responsabilidad
 
@@ -91,8 +92,10 @@ docs/testing-notes.md
 
 ## Siguiente hito
 
-Crear el proyecto en Supabase y luego implementar:
+Crear el proyecto en Supabase y aplicar la migracion inicial:
 
 ```text
-POST /waitlist/leads
+supabase/migrations/20260625211500_create_profiles.sql
 ```
+
+Despues implementar el primer flujo de registro/login con Supabase Auth y perfiles.
