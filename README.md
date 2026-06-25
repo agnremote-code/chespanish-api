@@ -34,7 +34,7 @@ La app mobile y la landing deberian consumir esta API cuando el backend este def
 
 ## Proximo paso
 
-Scaffold inicial de FastAPI:
+El scaffold inicial de FastAPI ya esta creado con:
 
 - estructura base de carpetas
 - endpoint `GET /health`
@@ -42,3 +42,50 @@ Scaffold inicial de FastAPI:
 - CORS local para landing y mobile
 - tests con Pytest
 - preparacion para conectar Supabase Postgres
+
+## Desarrollo local
+
+Crear y activar un entorno virtual:
+
+```bash
+py -m venv .venv
+.venv\Scripts\activate
+```
+
+Instalar dependencias:
+
+```bash
+py -m pip install -e ".[dev]"
+```
+
+Copiar variables de entorno:
+
+```bash
+copy .env.example .env
+```
+
+Ejecutar la API:
+
+```bash
+py -m uvicorn app.main:app --reload
+```
+
+Probar el health check:
+
+```text
+GET http://localhost:8000/health
+```
+
+Ejecutar tests:
+
+```bash
+py -m pytest
+```
+
+## Siguiente hito
+
+Crear el proyecto en Supabase y luego implementar:
+
+```text
+POST /waitlist/leads
+```
